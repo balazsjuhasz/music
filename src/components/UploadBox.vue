@@ -42,7 +42,6 @@
 
 <script>
 import { storage, auth, songsCollection } from "@/includes/firebase";
-import { required } from "@vee-validate/rules";
 
 export default {
   name: "UploadBox",
