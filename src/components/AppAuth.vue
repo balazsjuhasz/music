@@ -55,8 +55,8 @@
             </li>
           </ul>
 
-          <app-login-form v-if="tab === 'login'" />
-          <app-register-form v-else />
+          <AppLoginForm v-if="tab === 'login'" />
+          <AppRegisterForm v-else />
         </div>
       </div>
     </div>

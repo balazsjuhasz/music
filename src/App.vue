@@ -1,5 +1,5 @@
 <template>
-  <app-header />
+  <AppHeader />
 
   <router-view />
 
@@ -33,7 +33,7 @@
       <div class="player-duration">03:06</div>
     </div>
   </div>
-  <app-auth />
+  <AppAuth />
 </template>
 
 <script>
