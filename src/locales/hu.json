@@ -1,0 +1,12 @@
+{
+  "home": {
+    "listen": "Halgass Remek Zenét!"
+  },
+  "song": {
+    "comment_count": "Nincsenek hozzászólások | 1 hozzászólás | {count} hozzászólás"
+  },
+  "register": {
+    "accept": "Elfogadom a Music {0} ",
+    "tos": "Általános Szerződési Feltételeit"
+  }
+}
