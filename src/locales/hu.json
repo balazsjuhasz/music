@@ -8,5 +8,8 @@
   "register": {
     "accept": "Elfogadom a Music {0} ",
     "tos": "Általános Szerződési Feltételeit"
+  },
+  "manage": {
+    "my_songs": "Zenéim"
   }
 }
