@@ -1,26 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@/views/HomeView.vue";
-import AboutView from "@/views/AboutView.vue";
-import ManageView from "@/views/ManageView.vue";
-import SongView from "@/views/SongView.vue";
 import useUserStore from "@/stores/user";
 
 const routes = [
   {
     name: "home",
     path: "/",
-    component: HomeView,
+    component: () => import("@/views/HomeView.vue"),
   },
   {
     name: "about",
     path: "/about",
-    component: AboutView,
+    component: () => import("@/views/AboutView.vue"),
   },
   {
     name: "manage",
     path: "/manage-music",
     // alias: "/manage",
-    component: ManageView,
+    component: () => import("@/views/ManageView.vue"),
     // beforeEnter: (to, form, next) => {
     //   console.log("Manage Route Guard");
     //   next();
@@ -36,7 +32,7 @@ const routes = [
   {
     name: "song",
     path: "/song/:id",
-    component: SongView,
+    component: () => import("@/views/SongView.vue"),
   },
   {
     path: "/:catchAll(.*)*",
